@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Testing</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- bootstrap-link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg bg-success body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">New Asia Mart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">ទំព័រដើម</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">អំពីយើងខ្ញុំ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <h1 class="text-center">this is my first bootstrap</h1>
+
+    <!-- cover bootstrap -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./Images/photo_2025-11-20_04-06-05.jpg" class="d-block w-100 h-90" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/ncga_cover.jpg" class="d-block w-100 h-90 " alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/Comm-Watermelon-1200x600-1-1050x525.png" class="d-block w-100 h-90" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <h1 class="text-center" style="margin-top: 10px;">ផលិតផល</h1>
+
+    <!-- cart start -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 col-md-3 col-lg-2 mb-4">
+                <div class="card" style="shadow-sm p-3 mb-5 bg-body-tertiary rounded" ;>
+                    <img src="./Images/product/skor tnot1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ស្ករត្នោតខ្មែរ 1kg</h5>
+                        <p class="card-text"><strike>W</strike> 15.000</p>
+                        <a href="#add-to-cart" class="btn btn-outline-success">ដាក់ក្នុងកន្ត្រក</a>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 mb-4">
+                <div class="card">
+                    <img src="./Images/product/teok trey2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ទឹកត្រី (បង្កងប៉ាក)</h5>
+                        <p class="card-text"><strike>W</strike> 6.000</p>
+                        <a href="#" class="btn btn-outline-success"">ដាក់ក្នុងកន្ត្រក</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 mb-4">
+                <div class="card">
+                    <img src="./Images/product/seang sweet3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">សៀងផ្អែម</h5>
+                        <p class="card-text"><strike>W</strike> 5.000</p>
+                        <a href="#" class="btn btn-outline-success">ដាក់ក្នុងកន្ត្រក</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 mb-4">
+                <div class="card">
+                    <img src="./Images/product/sate 4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">សាតេ</h5>
+                        <p class="card-text"><strike>W</strike> 3.000</p>
+                        <a href="#" class="btn btn-outline-success">ដាក់ក្នុងកន្ត្រក</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 mb-4">
+                <div class="card">
+                    <img src="./Images/product/banhsong7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">បាញ់ស៊ុង ខ្មែរ</h5>
+                        <p class="card-text"><strike>W</strike> 7.000</p>
+                        <a href="#" class="btn btn-outline-success">ដាក់ក្នុងកន្ត្រក</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 mb-4">
+                <div class="card">
+                    <img src="./Images/product/bongkea6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">បង្គារគ្រៀម</h5>
+                        <p class="card-text"><strike>W</strike> 5.000</p>
+                        <a href="#" class="btn btn-outline-success">ដាក់ក្នុងកន្ត្រក</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
