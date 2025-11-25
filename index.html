@@ -11,157 +11,215 @@
     <!-- bootstrap-link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <style>
-            *{
-    margin: 0; padding: 0;
-    box-sizing: border-box;
-    transition: all 1.5s linear;
-}
-html{
-    font-size: 90%;
-    overflow-x: hidden;
-}
-body{
-    background: #eee;
-}
-.header{
-    position: sticky;
-    top: 0; left: 0; right: 0;
-    z-index: 100;
-    display: flex;
-    justify-content: space-between;
-    padding: .5rem;
-    background: #fff;
-    box-shadow:0 .3rem 1rem rgb(0,0,0,.1);
-}
-.header .logo{
-    font-weight: bold;
-    font-size: 2.2rem;
-    color: #130f40;
-    text-decoration: none;
-}
-.header .logo i{
-    color: #130f40;
-}
-.header .navbar a{
-    font-family: khmer os bokor;
-    font-size: 1.5rem;
-    margin: 0 2.2rem;
-    color: #130f40;
-    text-decoration: none;
-}
-.header .icon div{
-    width: 4.5rem; height: 4.5rem;
-    line-height: 4.5rem;
-    border-radius: .5rem;
-    color: #130f40;
-    background: #eee;
-    font-size: 1.5rem;
-    text-align: center;
-}
-.header .search-form{
-    position: absolute;
-    top: 110%; right: 110%;
-    width: 50rem;
-    height: 5rem;
-    background: #fff;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 .3rem 1rem rgb(0,0,0,.1);;
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 1.5s linear;
+        }
 
-}
-.header .search-form.active{
-    right: 2rem;
-    transition: .2s linear;
-}
+        html {
+            font-size: 90%;
+            overflow-x: hidden;
+        }
 
-.header .search-form input{
-    height: 100%;
-    width: 100%;
-    background: none;
-    text-transform: none;
-    font-size: 1.6rem;
-    color: #130f40;
-    padding: 0 1.5rem;
-}
+        body {
+            background: #eee;
+        }
 
-.header .search-form label{
-    font-size: 2.2rem;
-    padding-right: 1.5rem;
-    color: #130f40;
-    cursor: pointer;
-}
-.header .search-form label:hover{
-    color: rgb(26, 229, 26);
-}
-.container{
-    width: 90%;
-}
-            .card:hover{
-                outline-offset: 0rem;
-                outline: 2px solid #cfcfd4;
-                border-radius: .5rem;
+        .header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 2.5rem;
+            background: #fff;
+            box-shadow: 0 .3rem 1rem rgb(0, 0, 0, .1);
+        }
+
+        .header .logo {
+            font-weight: bold;
+            font-size: 2.2rem;
+            color: #130f40;
+            text-decoration: none;
+        }
+
+        .header .logo i {
+            color: #130f40;
+        }
+
+        .header .navbar a {
+            font-family: khmer os bokor;
+            font-size: 1.5rem;
+            margin: 0 2.2rem;
+            color: #130f40;
+            text-decoration: none;
+        }
+
+        .header .navbar a:hover {
+            color: #ff7800;
+        }
+
+        .header .icon div {
+            width: 4rem;
+            height: 4rem;
+            line-height: 4rem;
+            border-radius: .5rem;
+            color: #130f40;
+            background: #eee;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .header .icon div:hover {
+            color: #ff7800;
+            cursor: pointer;
+        }
+
+        .header .search-form {
+            position: absolute;
+            top: 110%;
+            right: 110%;
+            width: 50rem;
+            height: 5rem;
+            background: #fff;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 .3rem 1rem rgb(0, 0, 0, .1);
+            ;
+
+        }
+
+        .header .search-form.active {
+            right: 2rem;
+            transition: .2s linear;
+        }
+
+        .header .search-form input {
+            height: 100%;
+            width: 100%;
+            background: none;
+            text-transform: none;
+            font-size: 1.6rem;
+            color: #130f40;
+            padding: 0 1.5rem;
+        }
+
+        .header .search-form label {
+            font-size: 2.2rem;
+            padding-right: 1.5rem;
+            color: #130f40;
+            cursor: pointer;
+        }
+
+        .header .search-form label:hover {
+            color: rgb(26, 229, 26);
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .carousel-inner {
+            width: 100%;
+            text-align: center;
+            margin-top: 3.5rem;
+        }
+
+        .carousel-item img {
+            width: 95%;
+            border-radius: 10px;
+        }
+
+        .container-fluid {
+            width: 97%;
+        }
+
+        .card a {
+            text-decoration: none;
+        }
+
+        .card:hover {
+            outline-offset: 0rem;
+            outline: 2px solid #cfcfd4;
+            border-radius: .5rem;
+        }
+
+        .card-body h5 {
+            font-family: khmer os koulen;
+            font-size: 1.4rem;
+            color: #130f40;
+        }
+
+        .card-body p {
+            font-family: tahoma;
+            font-size: large;
+            font-weight: bold;
+            color: rgb(235, 94, 94);
+            margin-top: 10px;
+        }
+
+        .btn {
+            font-family: khmer os bokor;
+            font-size: 1.2rem;
+            width: 100%;
+            margin-top: 2rem;
+        }
+
+        .star i {
+            font-size: .8rem;
+            color: rgb(241, 159, 26);
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 2.3rem;
+            color: orange;
+            padding: 2rem;
+            font-weight: bold;
+            font-family: khmer os freehand;
+        }
+
+        /* @media queries */
+        @media (max-width: 991px) {
+            html {
+                font-size: 68%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            html {
+                font-size: 60%;
             }
 
-            .card-body h5{
-                font-family: khmer os koulen;
-                font-size: 1.6rem;
-                color: rgb(5, 134, 9);
+            .header .search-form {
+                width: 90%;
             }
-            .card-body p{
-                font-family: tahoma;
-                font-size: large;
-                font-weight: bold;
-                color: rgb(233, 13, 13);
-            }
-            .btn{
-                font-family: khmer os bokor;
-                font-size: 1.6rem;
-                width: 100%;
-            }
-            .star i{
-                font-size: 1.2rem;
-                color: rgb(241, 159, 26);
-                margin-bottom: 1.5rem;
-            }
-            h1 {
-                font-size: 2.3rem;
-                color: orange;
-                padding: 2rem;
-                font-family: khmer os freehand;
-            }
-/* @media queries */
-@media (max-width: 991px){
-    html{
-        font-size: 70%;
-    }
-}
-@media (max-width: 768px){
-    html{
-        font-size: 60%;
-    }
-    .header .search-form{
-        width: 90%;
-    }
-    .header .navbar{
-        position: fixed;
-        bottom: 0; left: 0; right: 0;
-        padding: 2rem 3%;
-        background-color: #fff;
-    }
-}
-          
-            /* footer */
-            .container-fluid .text-center{
+
+            .header .navbar {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 2rem 3%;
                 background-color: #fff;
-                padding: 1.5rem;
-                color: #130f40;
-                font-weight: bold;
-                font-size: 1.3rem;
             }
+        }
 
-        </style>
+        /* footer */
+        .container-fluid .text-center {
+            background-color: #fff;
+            padding: 1.5rem;
+            color: #130f40;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -194,13 +252,13 @@ body{
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./Images/photo_2025-11-20_04-06-05.jpg" class="d-block w-100 h-90" alt="...">
+                <img src="./Images/photo_2025-11-20_04-06-05.jpg">
             </div>
             <div class="carousel-item">
-                <img src="./Images/ncga_cover.jpg" class="d-block w-100 h-90 " alt="...">
+                <img src="./Images/ncga_cover.jpg">
             </div>
             <div class="carousel-item">
-                <img src="./Images/Comm-Watermelon-1200x600-1-1050x525.png" class="d-block w-100 h-90" alt="...">
+                <img src="./Images/Comm-Watermelon-1200x600-1-1050x525.png">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -212,117 +270,147 @@ body{
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+
     <h1 class="text-center" style="margin-top: 10px;">ផលិតផល</h1>
 
-    <!-- cart start -->
-    <div class="container">
+    <!-- ផលិតផល cart start -->
+    <div class="container-fluid">
         <div class="row">
             <div class="col-6 col-md-4 col-lg-2 mb-4">
                 <div class="card shadow p-1 rounded">
-                    <a href="palm-sugar.html"> <img src="./Images/product/skor tnot1.jpg" class="card-img-top"
-                            alt="..."></a>
-                    <div class="card-body">
-                        <h5 class="card-title">ស្ករត្នោតខ្មែរ 1kg</h5>
-                        <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                        <p class="card-text"><strike>W</strike> 15.000</p>
-                        <a href="#add-to-cart" class="btn btn-outline-success">ដាក់ក្នុងកន្ត្រក</a>
-                    </div>
+                    <a href="palm-sugar.html"> <img src="./Images/Product1/1 palm sugar.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">ស្ករត្នោតខ្មែរ 1kg</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="card-text"><strike>W</strike> 15.000</p>
+                    </a>
+                    <a href="#add-to-cart" class="btn btn-outline-success">ដាក់ក្នុងកន្ត្រក</a>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <div class="card shadow p-1 bg-body-tertiary rounded">
-                    <img src="./Images/product/teok trey2.jpg" class="card-img-top" alt="...">
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 mb-4">
+            <div class="card shadow p-1 bg-body-tertiary rounded">
+                <a href="#2"><img src="./Images/Product1/2 water fish.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">ទឹកត្រី (បង្កងប៉ាក)</h5>
                         <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
                         <p class="card-text"><strike>W</strike> 6.000</p>
-                        <a href="#" class="btn align-middle btn-outline-success">ដាក់ក្នុងកន្ត្រក</a>
-                    </div>
-                </div>
+                </a>
+                <a href="#" class="btn align-middle btn-outline-success">ដាក់ក្នុងកន្ត្រក</a>
             </div>
-            <div class=" col-6 col-md-4 col-lg-2 mb-4">
-                <div class="card shadow p-1 bg-body-tertiary rounded">
-                    <img src="./Images/product/seang sweet3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">សៀងផ្អែម</h5>
-                        <div class="star">
+        </div>
+    </div>
+    <div class=" col-6 col-md-4 col-lg-2 mb-4">
+        <div class="card shadow p-1 bg-body-tertiary rounded">
+            <a href="#3"> <img src="./Images/Product1/2 seang sweet.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">សៀងផ្អែម</h5>
+                    <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
                     </div>
-                        <p class="card-text"><strike>W</strike> 5.000</p>
-                        <a href="#" class="btn btn-outline-success">ដាក់ក្នុងកន្ត្រក</a>
+                    <p class="card-text"><strike>W</strike> 5.000</p>
+            </a>
+            <a href="#" class="btn btn-outline-success">ដាក់ក្នុងកន្ត្រក</a>
+        </div>
+    </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2 mb-4">
+        <div class="card shadow p-1 bg-body-tertiary rounded">
+            <a href="#3"> <img src="./Images/Product1/4 seang sweet.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">សៀងផ្អែម</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     </div>
-                </div>
-            </div>
+                    <p class="card-text"><strike>W</strike> 5.000</p>
+            </a>
+            <a href="#" class="btn btn-outline-success">ដាក់ក្នុងកន្ត្រក</a>
+        </div>
+    </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2 mb-4">
+        <div class="card shadow p-1 bg-body-tertiary rounded">
+            <a href="#3"> <img src="./Images/Product1/5 sa te.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">សាតេ</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="card-text"><strike>W</strike> 3.000</p>
+            </a>
+            <a href="#" class="btn btn-outline-success">ដាក់ក្នុងកន្ត្រក</a>
+        </div>
+    </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2 mb-4">
+        <div class="card shadow p-1 bg-body-tertiary rounded">
+            <a href="#3"> <img src="./Images/Product1/6 banh song.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">បាញ់ស៊ុង</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="card-text"><strike>W</strike> 7.000</p>
+            </a>
+            <a href="#" class="btn btn-outline-success">ដាក់ក្នុងកន្ត្រក</a>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- Beer product -->
+<h1 class="text-center" style="margin-top: 10px;">ប្រភេទស្រាបៀរ </h1>
+ <div class="container-fluid">
+        <div class="row">
             <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <div class="card shadow p-1 bg-body-tertiary rounded">
-                    <img src="./Images/product/sate 4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">សាតេ</h5>
-                        <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                        <p class="card-text"><strike>W</strike> 3.000</p>
-                        <a href="#" class="btn btn-outline-success">ដាក់ក្នុងកន្ត្រក</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <div class="card shadow p-1 bg-body-tertiary rounded">
-                    <img src="./Images/product/banhsong7.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">បាញ់ស៊ុង ខ្មែរ</h5>
-                        <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                        <p class="card-text"><strike>W</strike> 7.000</p>
-                        <a href="#" class="btn btn-outline-success">ដាក់ក្នុងកន្ត្រក</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <div class="card shadow p-1 bg-body-tertiary rounded">
-                    <img src="./Images/product/bongkea6.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">បង្គារគ្រៀម</h5>
-                        <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                        <p class="card-text"><strike>W</strike> 5.000</p>
-                        <a href="#" class="btn btn-outline-success">ដាក់ក្នុងកន្ត្រក</a>
-                    </div>
+                <div class="card shadow p-1 rounded">
+                    <a href="palm-sugar.html"> <img src="./Images/Product1/1 palm sugar.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">ស្ករត្នោតខ្មែរ 1kg</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="card-text"><strike>W</strike> 15.000</p>
+                    </a>
+                    <a href="#add-to-cart" class="btn btn-outline-success">ដាក់ក្នុងកន្ត្រក</a>
                 </div>
             </div>
         </div>
 
-    </div>
 
     <!-- footer start -->
     <div class="container-fluid">
