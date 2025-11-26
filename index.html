@@ -36,7 +36,7 @@
             z-index: 100;
             display: flex;
             justify-content: space-between;
-            padding: 0 2.5rem;
+            padding: 0 3.5rem;
             background: #fff;
             box-shadow: 0 .3rem 1rem rgb(0, 0, 0, .1);
         }
@@ -55,7 +55,7 @@
         .header .navbar a {
             font-family: khmer os bokor;
             font-size: 1.5rem;
-            margin: 0 2.2rem;
+            margin: 0 1rem;
             color: #130f40;
             text-decoration: none;
         }
@@ -132,12 +132,13 @@
         }
 
         .carousel-item img {
-            width: 95%;
+            width: 93%;
             border-radius: 10px;
         }
-
-        .container-fluid {
-            width: 97%;
+     
+        .row{
+            width: 96%;
+            margin: auto;
         }
 
         .card a {
@@ -186,15 +187,19 @@
         }
 
         /* @media queries */
+
         @media (max-width: 991px) {
             html {
-                font-size: 68%;
+                font-size: 75%;
             }
         }
 
         @media (max-width: 768px) {
             html {
-                font-size: 60%;
+                font-size: 70%;
+            }
+            .header{
+                padding: 0;
             }
 
             .header .search-form {
@@ -207,7 +212,11 @@
                 left: 0;
                 right: 0;
                 padding: 2rem 3%;
-                background-color: #fff;
+                background-color: #fff;               
+            }
+            .header .navbar a{
+                font-size: 1.5rem;
+                margin: 0 1rem;
             }
         }
 
@@ -231,7 +240,7 @@
         <a href="#" class="logo"> <img src="./Images/Logo/Mart logo..png" width="60" alt=""> New Asia Mart</a>
 
         <nav class="navbar">
-            <a href="#home">ទំព័រដើម</a>
+            <a href="index.html">ទំព័រដើម</a>
             <a href="#feature">ប្រភេទ</a>
             <a href="#product">បញ្ចុះតម្លៃ</a>
             <a href="#category">ផលិតផលថ្មី</a>
@@ -414,7 +423,7 @@
 
     <!-- footer start -->
     <div class="container-fluid">
-        <footer class="py-3 my-4">
+        <footer class="py-3 my-4 width">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             </ul>
             <p class="text-center">© New Asia Mart : All Right Reserved</p>
