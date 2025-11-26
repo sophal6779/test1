@@ -48,10 +48,6 @@
             text-decoration: none;
         }
 
-        .header .logo i {
-            color: #130f40;
-        }
-
         .header .navbar a {
             font-family: khmer os bokor;
             font-size: 1.5rem;
@@ -190,8 +186,22 @@
 
         @media (max-width: 991px) {
             html {
-                font-size: 75%;
+                font-size: 85%;
             }
+             .header .search-form {
+                width: 90%;
+            } 
+             .header .navbar {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 2rem 3%;
+                background-color: #fff;               
+            }
+            .header .navbar a{
+                margin:  0 1.5rem;
+            
         }
 
         @media (max-width: 768px) {
@@ -199,8 +209,14 @@
                 font-size: 70%;
             }
             .header{
-                padding: 0;
+                padding: .5rem 1rem;
             }
+            .header .logo img{
+                width: 50px;
+            }
+             .header .logo {
+            font-size: 1.5rem;
+        }
 
             .header .search-form {
                 width: 90%;
@@ -218,6 +234,13 @@
                 font-size: 1.5rem;
                 margin: 0 1rem;
             }
+            .header .icon div {
+            width: 3rem;
+            height: 3rem;
+            line-height: 3rem;
+            font-size: 1.2rem;
+            margin-top: 6px;
+        }
         }
 
         /* footer */
