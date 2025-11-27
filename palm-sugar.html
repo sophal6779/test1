@@ -13,223 +13,289 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <style>
-        .sticky-col {
-            position: sticky;
-            top: 20px;
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            transition: all 1s linear;
+        }
+        html{
+            font: 80%;
         }
 
-        .thumbnail {
-            height: 60px;
-            margin-bottom: 5px;
+        body {
+            color: #fff;
+        }
+
+        .container a,
+        i {
+            text-decoration: none;
+            font-family: khmer os;
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+
         }
 
         .main-product {
+            width: 95%;
+        }
+
+        .row h1 {
+            font-family: khmer os apsara;
+            font-size: 2.5rem;
+            color: #130f40;
+        }
+
+        .row i {
+            color: rgb(241, 159, 26);
+            margin-bottom: 20px;
+        }
+
+        .row p {
+            font-family: khmer os battambang;
+            font-size: 1rem;
+            color: rgb(27, 26, 26);
+            margin-top: 30px;
+            text-align: justify;
+        }
+
+        .row .price {
+            font-family: tahoma;
+            color: rgb(235, 94, 94);
+            font-size: 1.7rem;
+            font-weight: bold;
+        }
+
+        .flex {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            font-family: khmer os bokor;
+            margin-top: 40px;
             width: 100%;
-            height: 500px;
         }
     </style>
 </head>
 
 <body>
-    <div class="container py-5">
-        <div class="row">
-            <!-- thumbnail -->
-            <div class="col-md-1">
-                <div class="sticky-col">
-                    <img src="./Images/product/teok trey2.jpg" class="thumbnail">
-                    <img src="./Images/product/teok trey2.jpg" class="thumbnail">
-                    <img src="./Images/product/teok trey2.jpg" class="thumbnail">
-                    <img src="./Images/product/teok trey2.jpg" class="thumbnail">
-                </div>
-            </div>
 
+    <div class="container py-5">
+        <a href="./index.html"><i class="fa-solid fa-arrow-left"></i>ត្រឡប់ទៅទំព័រដើម</a>
+        <div class="row">
             <!-- Main prouct -->
-            <div class="col-md-6">
+            <div class="col-md-12 col-lg-6">
                 <div class="sticky-col">
-                    <img src="./Images/product/skor tnot1.jpg" class="main-product">
+                    <img src="./Images/Product1/1 palm sugar.jpg" class="main-product">
                 </div>
             </div>
 
             <!-- Product info -->
-            <div class="col-md-5">
-                <h1>ស្ករត្នោតខ្មែរ</h1>
-
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus provident amet illo quas? Enim
-                    ipsum accusantium ullam consequatur maiores voluptate, animi tenetur unde consequuntur magni
-                    inventore porro dicta a doloremque minima? Voluptate ipsa, officia libero ab placeat praesentium
-                    quas. Nesciunt ab natus, perferendis culpa amet accusantium quae deleniti molestiae veritatis.
+            <div class="col-md-12 col-lg-6">
+                <h1>ស្ករត្នោតខ្មែរ </h1>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="price"><strike>W</strike> 15,000</span>
+                <p>"ស្ករត្នោត" គឹជាផលិតផលរបស់ខ្មែរ​ ដែលស្ករត្នោតត្រូវបាន គេផលិតចេញពី ធម្មជាតិពិតៗ គឹផលិតពីដើមត្នោត ។
+                    នៅប្រទេសកម្ពុជា ប្រជាជនកម្ពុជាយើង ចូលចិត្តយកវាមកបរិភោគបានច្រើនយ៉ាង ដូចជា សំរាប់បង់សម្លរ
+                    អោយមានរស់ជាតិ ឆ្ងាញ់ពិសារ សំរាប់ធ្វើបង្អែមចង្អាបជាដើម ល ។
                 </p>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    check out
-                </button>
-            </div>
-            <div class="container py-5">
-                <h1>Related Product</h1>
-                <div id="carouselExample" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <div class="col-3">
-                                    <div class="card">
-                                        <img src="./Images/product/teok trey2.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the card content.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="card">
-                                        <img src="./Images/product/seang sweet3.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the card content.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="card">
-                                        <img src="./Images/product/sate 4.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the card content.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="card">
-                                        <img src="./Images/product/bongkea6.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the card content.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-3">
-                                    <div class="card">
-                                        <img src="./Images/product/banhsong7.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the card content.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="card">
-                                        <img src="./Images/product/noodle9.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the card content.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="card">
-                                        <img src="./Images/product/nombanhjok8.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the card content.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="card">
-                                        <img src="./Images/product/seang sweet5.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the card content.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
+                <div class="flex">
+                    <button class="btn btn-outline-success">ដាក់ក្នុងកន្ត្រក</button>
+                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        បញ្ជាទិញ
+                    </button>
                 </div>
             </div>
         </div>
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl modal-dialog-centered">
-                <div class="modal-content p-5">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Confirm your information</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="container py-5">
+            <h1>Related Product</h1>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="card">
+                                    <a href="#3"> <img src="./Images/Product1/5 sa te.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">សាតេ</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     </div>
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    <p class="card-text"><strike>W</strike> 3.000</p>
+            </a>
+            <a href="#" class="btn btn-outline-success">ដាក់ក្នុងកន្ត្រក</a>                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="card">
+                                    <img src="./Images/product/seang sweet3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up the bulk of the card content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="card">
+                                    <img src="./Images/product/sate 4.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up the bulk of the card content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="card">
+                                    <img src="./Images/product/bongkea6.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up the bulk of the card content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="card">
+                                    <img src="./Images/product/banhsong7.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up the bulk of the card content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="card">
+                                    <img src="./Images/product/noodle9.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up the bulk of the card content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="card">
+                                    <img src="./Images/product/nombanhjok8.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up the bulk of the card content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="card">
+                                    <img src="./Images/Product1/2 seang sweet.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up the bulk of the card content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-5">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">សូមធ្វើការចុះឈ្មោះជាមុនសិនណា <br>Bro and Sist </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="row g-3">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="នាម" aria-label="First name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="ត្រកូល" aria-label="Last name">
+                    </div>
+                </div>
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <!-- select -->
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>ជ្រើសរើសធនាគារ</option>
+                        <option value="1">KB 국민은행</option>
+                        <option value="2">Woori 우리은행</option>
+                        <option value="3">IBK 기업은행</option>
+                    </select>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                        <button type="button" class="btn btn-primary">រក្សាទុក</button>
                     </div>
-                </div>
             </div>
         </div>
-        <!-- footer -->
-        <div class="container">
-            <footer class="py-3 my-4">
-                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">ទំព័រដើម</a>
-                    </li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-                </ul>
-                <p class="text-center text-body-secondary">© 2025 Company, Inc</p>
-            </footer>
-        </div>
+    </div>
+    <!-- footer -->
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">ទំព័រដើម</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2025 Company, Inc</p>
+        </footer>
+    </div>
 
 
-        <!-- bootstrap script -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"></script>
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
